@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, onBeforeMount } from 'vue'
 
 const questions = ref( [
     {
@@ -65,6 +65,8 @@ const nextQuestion = () => {
         quizCompleted.value = true
     }
 }
+
+onBeforeMount( () => {} )
 
 </script>
 
