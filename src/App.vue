@@ -77,7 +77,9 @@ function shuffleArray(array) {
     }
 }
 
-onBeforeMount( () => {} )
+onBeforeMount( () => {
+    shuffleArray( questions.value )
+} )
 
 </script>
 
